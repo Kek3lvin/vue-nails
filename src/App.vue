@@ -1,11 +1,15 @@
-<script setup></script>
-
+<script setup>
+import AppHeader from './componentes/AppHeader.vue' //Importando o componente Header
+import AppFooter from './componentes/AppFooter.vue' //Importanndo o componente Footer
+import router from './router';
+</script>
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+ <AppHeader />
+ 
+  <router-view />
+
+ <AppFooter />
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
